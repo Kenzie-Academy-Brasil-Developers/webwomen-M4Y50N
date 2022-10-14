@@ -1,0 +1,21 @@
+button {
+	cursor: pointer;
+	border: none;
+
+	padding: 0.8rem 1rem;
+
+	border-radius: 0.8rem;
+
+	transition: all 0.3s ease;
+}
+
+header button {
+	width: 18.5rem;
+	color: var(--color-grey-6);
+	font-size: var(--text-1);
+	background-color: var(--color-brand-1);
+}
+
+header button:hover {
+	background-color: var(--color-brand-2);
+}
