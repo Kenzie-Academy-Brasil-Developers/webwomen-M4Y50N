@@ -2,7 +2,7 @@ header {
 	padding: 2.5rem 0px;
 	color: var(--color-grey-6);
 
-	background-image: linear-gradient(#212529a4, #212529a4),
+	background-image: linear-gradient(#212529c7, #212529c7),
 		url("../assets/img/pexels-mentatdgt-1206059.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -19,6 +19,7 @@ header {
 
 .paragraph {
 	font-size: var(--text-3);
+	line-height: 1.7rem;
 }
 
 main {
@@ -26,4 +27,7 @@ main {
 	background-color: var(--color-grey-5);
 
 	display: flex;
+	flex-direction: column;
+
+	row-gap: 1.5rem;
 }

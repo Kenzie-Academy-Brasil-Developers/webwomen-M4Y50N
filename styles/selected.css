@@ -1,0 +1,14 @@
+.selected {
+	text-align: center;
+
+	padding: 2rem 1rem;
+
+	display: flex;
+	flex-direction: column;
+
+	row-gap: 2rem;
+
+	background-color: var(--color-grey-4);
+	box-shadow: 0px 0px 5px var(--color-grey-2);
+	border-radius: 0.8rem;
+}

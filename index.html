@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="./styles/div.css" />
 		<link rel="stylesheet" href="./styles/button.css" />
 		<link rel="stylesheet" href="./styles/card.css" />
+		<link rel="stylesheet" href="./styles/selected.css" />
 		<link
 			rel="shortcut icon"
 			href="./assets/img/favicon.ico"
@@ -34,7 +35,7 @@
 					Ou até mesmo oportunidades para atender eventos de tecnologia no
 					Brasil e ao redor do mundo?
 					<br /><br />
-					Confere aqui embaixo o que temos pra você!
+					<span class="strong">Confere aqui embaixo o que temos pra você!</span>
 				</p>
 				<button>Ir para seção de vagas</button>
 			</div>
@@ -43,9 +44,9 @@
 			<div class="vagas">
 				<h1 class="title-4">Vagas</h1>
 				<ul class="posts">
-					<li class="post">
+					<!-- <li class="post">
 						<div class="card-head">
-							<h3>Pessoa desenvolvedora front-end - React</h3>
+							<h3 class="title-4">Pessoa desenvolvedora front-end - React</h3>
 							<div class="info">
 								<div class="empresa">Kenzie Academy</div>
 								<div class="location">Curitiba</div>
@@ -57,13 +58,21 @@
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s
 							</p>
+							<div class="modalidades">
 							<div class="modalidade">Presencial</div>
+							<div/>
 						</div>
 						<div class="card-footer">
 							<button>Candidatar</button>
 						</div>
-					</li>
+					</li> -->
 				</ul>
+			</div>
+			<div class="selected">
+				<h1 class="title-4">Vagas Selecionadas</h1>
+				<div class="selected-items">
+					<div class="vazio">Você ainda não aplicou nenhuma vaga</div>
+				</div>
 			</div>
 		</main>
 		<script src="./script/jobsData.js"></script>
