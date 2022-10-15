@@ -29,7 +29,7 @@ function render(array) {
 
 		li.classList.add("post");
 		cardHead.classList.add("card-head");
-		h3.classList.add("title-4");
+		h3.classList.add("title-5");
 		info.classList.add("info");
 		empresa.classList.add("empresa");
 		loc.classList.add("loc");

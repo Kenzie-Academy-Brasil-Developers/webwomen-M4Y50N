@@ -12,3 +12,42 @@
 	box-shadow: 0px 0px 5px var(--color-grey-2);
 	border-radius: 0.8rem;
 }
+
+.selected-items {
+	display: flex;
+	flex-direction: column;
+
+	row-gap: 1.5rem;
+}
+
+.selected-items .item {
+	text-align: left;
+}
+
+.item {
+	display: flex;
+
+	align-items: flex-start;
+}
+
+.item h3 {
+	font-size: var(--text-2);
+}
+
+.item .info {
+	font-size: var(--text-3);
+	display: flex;
+	column-gap: 1rem;
+}
+
+.trash {
+	color: var(--color-grey-6);
+	font-size: var(--text-1);
+	background-color: var(--color-grey-2);
+
+	transition: all 0.3s ease;
+}
+
+.trash:hover {
+	background-color: var(--color-grey-1);
+}
