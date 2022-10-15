@@ -1,7 +1,8 @@
 //render
 function render(array) {
 	array.forEach((element) => {
-		const { title, enterprise, location, description, modalities } = element;
+		const { id, title, enterprise, location, description, modalities } =
+			element;
 		const ul = document.querySelector(".posts"),
 			li = document.createElement("li"),
 			cardHead = document.createElement("div"),
@@ -25,7 +26,9 @@ function render(array) {
 			modalidade.textContent = x;
 			modalidades.appendChild(modalidade);
 		});
+		candidatar.id = "b_" + id;
 		candidatar.textContent = "Candidatar";
+		candidatar.addEventListener("click", addItem);
 
 		li.classList.add("post");
 		cardHead.classList.add("card-head");
