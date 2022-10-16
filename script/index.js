@@ -35,7 +35,7 @@ function render(array) {
 
 		candidatar.textContent =
 			addedItem.length == 0 ? "Candidatar" : "Você já se candidatou";
-		addedItem.length == 0 ? addedItem : candidatar.classList.add("disable");
+
 		candidatar.addEventListener("click", addItem);
 
 		addedItem.length == 0 ? addedItem : renderSelected(element);

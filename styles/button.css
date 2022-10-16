@@ -1,4 +1,7 @@
-button {
+button,
+a {
+	text-decoration: none;
+	text-align: center;
 	cursor: pointer;
 	border: none;
 
@@ -9,13 +12,14 @@ button {
 	transition: all 0.3s ease;
 }
 
-header button {
+header a {
 	width: 18.5rem;
+	max-width: 100%;
 	color: var(--color-grey-6);
-	font-size: var(--text-1);
+	font-size: var(--text-2);
 	background-color: var(--color-brand-1);
 }
 
-header button:hover {
+header a:hover {
 	background-color: var(--color-brand-2);
 }

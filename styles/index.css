@@ -23,8 +23,11 @@ header {
 }
 
 main {
-	padding: 2.5rem 0px;
 	background-color: var(--color-grey-5);
+}
+
+main > div {
+	padding: 2.5rem 0px;
 
 	display: flex;
 	flex-direction: column;
@@ -34,9 +37,4 @@ main {
 
 .hidden {
 	display: none;
-}
-
-.disable {
-	pointer-events: none;
-	background-color: var(--color-grey-1) !important;
 }

@@ -62,3 +62,33 @@ ul {
 		--text-1: calc(1.125rem / 1.2);
 	}
 }
+
+@media (min-width: 500px) {
+	.card-footer button {
+		width: 234px !important;
+		max-width: 100%;
+		margin-left: auto !important;
+	}
+
+	.selected {
+		width: 400px;
+		margin: 0px auto;
+	}
+}
+
+@media (min-width: 818px) {
+	main > div {
+		flex-direction: row !important;
+		column-gap: 1.5rem;
+	}
+
+	.vagas {
+		width: 90% !important;
+	}
+
+	.selected {
+		height: fit-content;
+		position: sticky;
+		top: 20px;
+	}
+}

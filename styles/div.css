@@ -1,5 +1,13 @@
-header div {
+header > div {
 	display: flex;
 	flex-direction: column;
 	row-gap: 2rem;
+}
+
+.paragraph-container {
+	font-size: var(--text-3);
+	line-height: 1.7rem;
+
+	display: flex;
+	flex-direction: column;
 }
