@@ -1,8 +1,10 @@
 //render
 function render(array) {
+	const selectedH = selectedHistory.length == 0 ? [] : selectedHistory;
 	array.forEach((element) => {
 		const { id, title, enterprise, location, description, modalities } =
 			element;
+
 		const ul = document.querySelector(".posts"),
 			li = document.createElement("li"),
 			cardHead = document.createElement("div"),
@@ -27,8 +29,16 @@ function render(array) {
 			modalidades.appendChild(modalidade);
 		});
 		candidatar.id = "b_" + id;
-		candidatar.textContent = "Candidatar";
+		const addedItem = selectedH.filter((el) => {
+			return el.id == id;
+		});
+
+		candidatar.textContent =
+			addedItem.length == 0 ? "Candidatar" : "Você já se candidatou";
+		addedItem.length == 0 ? addedItem : candidatar.classList.add("disable");
 		candidatar.addEventListener("click", addItem);
+
+		addedItem.length == 0 ? addedItem : renderSelected(element);
 
 		li.classList.add("post");
 		cardHead.classList.add("card-head");

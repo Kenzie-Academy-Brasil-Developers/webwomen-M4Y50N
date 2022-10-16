@@ -31,3 +31,12 @@ main {
 
 	row-gap: 1.5rem;
 }
+
+.hidden {
+	display: none;
+}
+
+.disable {
+	pointer-events: none;
+	background-color: var(--color-grey-1) !important;
+}
