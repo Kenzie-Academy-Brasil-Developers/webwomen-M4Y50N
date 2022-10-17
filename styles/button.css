@@ -12,6 +12,12 @@ a {
 	transition: all 0.3s ease;
 }
 
+button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 header a {
 	width: 18.5rem;
 	max-width: 100%;
